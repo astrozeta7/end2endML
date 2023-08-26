@@ -16,9 +16,3 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
 
-if __name__=='__main__':
-    try:
-        a = b
-    except Exception as e:
-        logging.info(e)
-        raise CustomException(e, sys)
